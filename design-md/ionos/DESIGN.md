@@ -177,11 +177,13 @@ The 24px card radius is a distinctive design marker, making product cards feel f
 
 ### Navigation
 
-A two-tier navigation bar:
-- **Top bar**: Language selector, phone number, About Us, Support, Sign In. Text is white on the dark hero background, Open Sans 16px.
-- **Main nav**: Product links (Domains & SSL, Email & Office, Websites, etc.) in Open Sans Semi Bold 16px, dark text (`#001b41`). Each link has padding of 14px 12px. The "New Momentum AI" link carries a purple accent treatment.
+A single-tier sticky navigation bar on a dark navy (`#001b41`) background with white text:
 
-On scroll, the navigation switches to a white background with dark text.
+- **Logo**: The IONOS wordmark logo on the left side of the bar, served as a standalone SVG asset.
+- **Product links**: New Momentum AI (with purple AI badge), Domains & SSL, Email & Office, Websites, eCommerce, WordPress, Hosting, Servers, Cloud — rendered in Open Sans Semi Bold 14px, positioned to the left of the logo.
+- **Icon tray** (right-aligned): Language selector (globe icon + "EN"), phone icon, and sign-in (user silhouette) icon. No dividers between icons. Icons are slightly muted white at 0.8 opacity with a 34px hit area and 6px border-radius on hover.
+
+The bar is 64px tall with 32px horizontal padding. On mobile (<768px), the link list collapses behind a hamburger toggle positioned between the links and the logo.
 
 ### Buttons
 
@@ -214,7 +216,7 @@ AI-powered features carry a distinct **purple** (`#e480f8`) badge/tag, marking M
 
 Deep navy (`#0b2a63`) full-width footer with white text, organized in 4 columns:
 - Company, Knowledge, Partner Programs, Support
-- Social media icons (Instagram, Facebook, YouTube, LinkedIn, TikTok)
+- Social media link row: 5 inline SVG icons (Instagram, Facebook, YouTube, LinkedIn, TikTok) rendered in solid white (`fill="currentColor"`, color inherited from parent white text). Each icon uses an 18×18 viewBox and a standard platform-specific path. No background, no label text — icon-only. Links are spaced evenly and wrapped in `<a>` tags with `aria-label` for accessibility.
 - Country selector
 - Tax notice and Terms link
 
